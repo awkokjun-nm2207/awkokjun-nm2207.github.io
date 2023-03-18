@@ -13,3 +13,5 @@ function count() {
 
   document.querySelector(".counter").innerHTML = counter;
 }
+
+
