@@ -3,3 +3,25 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.navbar a,
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: #ccc;
+}
