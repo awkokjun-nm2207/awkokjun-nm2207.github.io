@@ -1,7 +1,6 @@
-/* General styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
+  background-color: #000;
+  color: #fff;
 }
 
 header, footer {
@@ -10,19 +9,10 @@ header, footer {
   padding: 20px;
 }
 
-header h1, footer p {
-  margin: 0;
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 h2 {
   font-size: 24px;
   margin-top: 40px;
+  color: #fff;
 }
 
 ul {
@@ -71,12 +61,14 @@ ul {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 0;
+  color: #fff;
 }
 
 .product-list li p {
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 0;
+  color: #fff;
 }
 
 .product-list li button {
