@@ -1,21 +1,113 @@
+/* General styles */
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Livestream section styles */
+.livestream {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Product section styles */
+.product-list li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  width: calc(33.33% - 20px);
+}
+
+.product-list li:last-child {
+  margin-right: 0;
+}
+
+.product-list li img {
+  max-width: 100%;
+}
+
+.product-list li h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.product-list li p {
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.product-list li button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.product-list li button:hover {
   background-color: #000;
   color: #fff;
 }
 
-.navbar {
-  background-color: #000;
+/* Data Visualization section styles */
+.data-visualization canvas {
+  max-width: 100%;
 }
 
-.navbar a,
-.navbar .navbar-brand {
-  color: #fff;
-}
-
-.navbar .nav-link {
-  color: #fff;
-}
-
-.navbar .nav-link:hover {
-  color: #ccc;
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .product-list li {
+    width: 100%;
+  }
+  
+  .product-list li:last-child {
+    margin-right: 0;
+  }
 }
