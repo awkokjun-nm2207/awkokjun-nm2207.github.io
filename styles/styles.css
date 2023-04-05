@@ -1,105 +1,26 @@
-body {
-  background-color: #000;
-  color: #fff;
-}
-
-header, footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-}
-
-h2 {
-  font-size: 24px;
-  margin-top: 40px;
-  color: #fff;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Livestream section styles */
-.livestream {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 40px;
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Product section styles */
-.product-list li {
-  display: inline-block;
-  margin-right: 20px;
-  vertical-align: top;
-  width: calc(33.33% - 20px);
-}
-
-.product-list li:last-child {
-  margin-right: 0;
-}
-
-.product-list li img {
-  max-width: 100%;
-}
-
-.product-list li h3 {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 0;
-  color: #fff;
-}
-
-.product-list li p {
-  font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 0;
-  color: #fff;
-}
-
-.product-list li button {
-  background-color: #fff;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  display: block;
-  font-size: 14px;
-  margin-top: 10px;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
-}
-
-.product-list li button:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-/* Data Visualization section styles */
-.data-visualization canvas {
-  max-width: 100%;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .product-list li {
-    width: 100%;
-  }
-  
-  .product-list li:last-child {
-    margin-right: 0;
-  }
-}
+<div class="container">
+    <header>
+        <h1>Tiktok Livestream E-commerce Sales</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p>With the rise of social media, Tiktok has become a global platform for people to share their lives and interact with others. It is one of the most popular social media platforms in the world. It has since become a platform for people to make money, by selling products on Tiktok Shop. Livestream e-commerce is increasingly prioritised by Tiktokshop and other e-commerce platforms such as Shopee. Livestream e-commerce is the future of e-commerce.</p>
+        </section>
+        <section>
+            <h2>Problem Statement</h2>
+            <p>How can we use data analytics to predict the sales of Tiktok livestream e-commerce?</p>
+        </section>
+        <section>
+            <h2>Research Questions</h2>
+            <ol>
+                <li>What is the relationship between the number of livestreams and the sales of Tiktok livestream e-commerce?</li>
+                <li>What is the relationship between the number of likes and the sales of Tiktok livestream e-commerce?</li>
+                <li>What is the relationship between the number of comments and the sales of Tiktok livestream e-commerce?</li>
+                <li>What is the relationship between the number of shares and the sales of Tiktok livestream e-commerce?</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Dataset</h2>
+            <p>Dataset: Tiktok Livestream E-commerce Sales</p>
+            <p>Source: <a href="https://www.kaggle.com/rohanrao/tiktok-livestream-ecommerce-sales" target="_blank">https://www.kaggle.com/rohanrao/tiktok
