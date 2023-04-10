@@ -3,12 +3,8 @@
     <head>
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <title>Tiktok Livestream E-commerce Sales</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  </head>
- 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     </head>
 
     <body>
@@ -27,49 +23,151 @@
     </li>
     <div id="container">
     <div id="header">
-        <body>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#"><i class="fab fa-tiktok"></i></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button
     </html>
-    
 
 <!--Heading Text-->
+<div class="black-bg-white-text">
     <h1>Tiktok Livestream E-commerce Sales</h1>
-    </div>
-    <div id="content">
-    <h2>Introduction</h2>
-    <p>With the rise of social media, Tiktok has become a global platform for people to share their lives and interact with others. 
-        It is one of the most popular social media platforms in the world. 
-        It has since become a platform for people to make money, by selling 
-        products on Tiktok Shop. Livestream e-commerce is increasingly prioritised by Tiktokshop and other e-commerce platforms such as Shopee. 
-        Livestream e-commerce is the future of e-commerce.</p>
-    <h2>Problem Statement</h2>
-    <p>How can we use data analytics to predict the sales of Tiktok livestream e-commerce?</p>
-    <h2>Research Questions</h2>
-    <p>1. What is the relationship between the number of livestreams and the sales of Tiktok livestream e-commerce?</p>
-    <p>2. What is the relationship between the number of likes and the sales of Tiktok livestream e-commerce?</p>
-    <p>3. What is the relationship between the number of comments and the sales of Tiktok livestream e-commerce?</p>
-    <p>4. What is the relationship between the number of shares and the sales of Tiktok livestream e-commerce?</p>
-    <h2>Dataset</h2>
-    <p>Dataset: Tiktok Livestream E-commerce Sales</p>
-    <p>Source: https://www.kaggle.com/rohanrao/tiktok-livestream-ecommerce-sales</p>
-    <p>Dataset Description: This dataset contains the sales of Tiktok livestream e-commerce from 2019 to 2020. 
-        It contains the number of livestreams, likes, comments, shares and sales of Tiktok livestream e-commerce.</p>
-    <h2>Methodology</h2>
-    <p>1. Data Collection</p>
-    <p>2. Data Cleaning</p>
-    <p>3. Data Analysis</p>
-    <p>4. Data Visualization</p>
-    <h2>Conclusion</h2>
-    <p>1. The number of livestreams and the sales of Tiktok livestream e-commerce have a positive correlation.</p>
-    <p>2. The number of likes and the sales of Tiktok livestream e-commerce have a positive correlation.</p>
-    <p>3. The number of comments and the sales of Tiktok livestream e-commerce have a positive correlation.</p>
-    <p>4. The number of shares and the sales of Tiktok livestream e-commerce have a positive correlation.</p>
-    <h2>References</h2>
-    <p>1. https://www.kaggle.com/rohanrao/tiktok-livestream-ecommerce-sales</p>
-    <p>2. https://www.tiktok.com/en/</p>
-    <p>3. https://www.tiktokshop.com/</p>
-    <p>4. https://www.shopee.com.my/</p>
+</div>
+<div id="content">
+<h2>Introduction</h2>
+<p>With the rise of social media, Tiktok has become a platform for people to share their lives and interact with others. Tiktok is one of the most popular social media platforms in the world. It is a platform where people can share their   videos and interact with others. Tiktok has become a platform for people to make money. There are many ways to make money on Tiktok. One of the ways is to sell products on Tiktok. Tiktok has become a platform for people to sell everything and anything, as long as there is potential profit margins.</p>
+
+  </div>
+
+  <img class="custom-image" src="Tiktokshop.png" alt="A description of the image" />
+
+  <p>Due to limitations to existing pool of data available, live e-commerce sales will be used to approximate the demand for tiktokshop's livestream e-commerce.</p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+  <div class="black-bg-white-text">
+    <canvas id="myChart"></canvas>
+    Gross merchandise volume of China's e-commerce market from 2011 to 2022 (in trillion yuan)
+  </div>
+
+// data visualisation 1: bar chart
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('myChart').getContext('2d');
+
+    const myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+        datasets: [{
+          label: "(in trillion yuan)",
+          data: [6.09, 8.11, 10.4, 16.39, 21.79, 26.1, 29.16, 31.63, 34.81, 37.21],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+      
+    });
+  });
+
+</script>
+<a href="https://www.statista.com/statistics/1129543/china-e-commerce-market-gross-merchandise-volume/">Source: Statista</a>
+  </script>
+  
+// data visualisation 2: bar chart
+  <div class="black-bg-white-text">
+    <canvas id="myPieChart"></canvas>
+    Percentage of respondents who bought via live commerce in Southeast Asia in 2021, by country
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const pieCtx = document.getElementById('myPieChart').getContext('2d');
+  
+      const myPieChart = new Chart(pieCtx, {
+        type: 'pie',
+        data: {
+          labels: ['Vietnam','Thailand','Philippines','Malaysia','Indonesia','Singapore'],
+          datasets: [{
+            data: [70,	61,	40,	35,	30,	21],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.8)',
+              'rgba(54, 162, 235, 0.8)',
+              'rgba(255, 206, 86, 0.8)',
+              'rgba(75, 192, 192, 0.8)',
+              'rgba(153, 102, 255, 0.8)',
+              'rgba(255, 159, 64, 0.8)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+          }]
+        }
+      });
+    });
+  </script>
+
+</script>
+<a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/1271637/sea-live-commerce-awareness-and-usage-by-country/?locale=en">Source: Statista</a>
+  </script>
+  
+// data visualisation 3: Polar Chart
+  <div class="black-bg-white-text">
+    <canvas id="myPolarChart"></canvas>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const polarCtx = document.getElementById('myPolarChart').getContext('2d');
+  
+      const myPolarChart = new Chart(polarCtx, {
+        type: 'polarArea',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.8)',
+              'rgba(54, 162, 235, 0.8)',
+              'rgba(255, 206, 86, 0.8)',
+              'rgba(75, 192, 192, 0.8)',
+              'rgba(153, 102, 255, 0.8)',
+              'rgba(255, 159, 64, 0.8)'
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+          }]
+        }
+      });
+    });
+  </script>
