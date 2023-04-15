@@ -1,4 +1,3 @@
-//data visualisation 1
 document.addEventListener('DOMContentLoaded', function() {
   const ctx = document.getElementById('myChart').getContext('2d');
 
@@ -62,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//data visualisation 2
+
 document.addEventListener('DOMContentLoaded', function() {
   const pieCtx = document.getElementById('myPieChart').getContext('2d');
 
@@ -102,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 });
 
-//data visualisation 3
+
 document.addEventListener('DOMContentLoaded', function() {
   const polarCtx = document.getElementById('myPolarChart').getContext('2d');
   const myPolarChart = new Chart(polarCtx, {
@@ -153,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//data visualisation 4
+
 document.addEventListener('DOMContentLoaded', function () {
   const horizontalBarCtx = document.getElementById('myHorizontalBarChart').getContext('2d');
 
