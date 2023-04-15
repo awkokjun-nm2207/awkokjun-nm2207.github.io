@@ -1,29 +1,71 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <title>Tiktok Livestream E-commerce Sales</title>
-    <link rel="stylesheet" href="styles/styles.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    </head>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tiktok Livestream E-commerce Sales</title>
+<link rel="stylesheet" href="styles/styles.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
 
-    <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">NM2207 Aw Kok Jun</a>
+
+
+<style>
+    .black-bg-white-text {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+    }
+    .custom-image {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+
+<head>
+<title>Tiktok Livestream E-commerce Sales</title>
+<link rel="stylesheet" href="styles/styles.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+        color: white;
+    }
+    .navbar-custom .nav-item.active .nav-link {
+        color: #ff9900;
+    }
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">NM2207 Aw Kok Jun</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-    <li class="nav-item active">
-    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="#">Features</a>
-    </li>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+<!--Asked chatgpt how to embed a live website onto my Github Webpage-->
+            <img src="your-image-source.png" alt="Your Image Description" class="navbar-img">
+            <iframe src="https://www.tiktok.com/embed_URL" width="500" height="600" frameborder="0" allowfullscreen></iframe>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data Visualisation</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div id="container">
-    <div id="header">
-    </html>
+        <div id="header">
+    </div>
+</body>
+
 
 <!--Heading Text-->
 <div class="black-bg-white-text">
@@ -31,7 +73,11 @@
 </div>
 <div id="content">
 <h2>Introduction</h2>
-<p>With the rise of social media, Tiktok has become a platform for people to share their lives and interact with others. Tiktok is one of the most popular social media platforms in the world. It is a platform where people can share their   videos and interact with others. Tiktok has become a platform for people to make money. There are many ways to make money on Tiktok. One of the ways is to sell products on Tiktok. Tiktok has become a platform for people to sell everything and anything, as long as there is potential profit margins.</p>
+<p>With the rise of social media, Tiktok has become a platform for people to share their lives and interact with others. 
+  One of the most popular social media platforms in the world, Tiktok is a platform where people can share their videos and interact with others. 
+  There are many ways to make money on Tiktok. One of the ways is to sell products on Tiktok Shop. 
+  However, with the rise of livestream e-commerce, Tiktok is now considering if it should follow in the footsteps of 
+  its parent company ByteDance in establishing a market presence for Livestream E-commerce in Singapore.</p>
 
   </div>
 
@@ -45,7 +91,7 @@
     Gross merchandise volume of China's e-commerce market from 2011 to 2022 (in trillion yuan)
   </div>
 
- <--data visualisation 1: bar chart-->
+<!--data visualisation 1: bar chart-->
  <script>
   document.addEventListener('DOMContentLoaded', function() {
     const ctx = document.getElementById('myChart').getContext('2d');
@@ -63,7 +109,11 @@
             'rgba(255, 206, 86, 0.2)',
             'rgba(75, 192, 192, 0.2)',
             'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(99, 255, 132, 0.2)',
+            'rgba(255, 99, 255, 0.2)',
+            'rgba(255, 255, 64, 0.2)',
+            'rgba(0, 128, 128, 0.2)'
           ],
           borderColor: [
             'rgba(255, 99, 132, 1)',
@@ -71,7 +121,11 @@
             'rgba(255, 206, 86, 1)',
             'rgba(75, 192, 192, 1)',
             'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
+            'rgba(255, 159, 64, 1)',
+            'rgba(99, 255, 132, 1)',
+            'rgba(255, 99, 255, 1)',
+            'rgba(255, 255, 64, 1)',
+            'rgba(0, 128, 128, 1)',
           ],
           borderWidth: 1
         }]
@@ -87,16 +141,14 @@
     });
   });
 
-     
 </script>
 <a href="https://www.statista.com/statistics/1129543/china-e-commerce-market-gross-merchandise-volume/">Source: Statista</a>
   </script>
   
-        
-<--data visualisation 2: bar chart-->
+<!--data visualisation 2: pie chart-->
   <div class="black-bg-white-text">
     <canvas id="myPieChart"></canvas>
-    Percentage of respondents who bought via live commerce in Southeast Asia in 2021, by country
+    Percentage of respondents who bought via live commerce in Southeast Asia in 2021, by country (in %)
   </div>
 
   <script>
@@ -135,8 +187,9 @@
 </script>
 <a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/1271637/sea-live-commerce-awareness-and-usage-by-country/?locale=en">Source: Statista</a>
   </script>
-  
-<--data visualisation 3: Polar Chart-->
+
+<!--Asked ChatGPT how to create a polar chart using Chart.js which was not taught in class-->
+<!--data visualisation 3: polar chart-->
   <div class="black-bg-white-text">
     <canvas id="myPolarChart"></canvas>
   </div>
@@ -173,10 +226,141 @@
       });
     });
   </script>
+  
+</script>
+<a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/1271637/sea-live-commerce-awareness-and-usage-by-country/?locale=en">Source: Statista</a>
+  </script>
 
-<body>
-    <h1>Weekly Diaries</h1>
-    <p>
-        Click <a href="https://github.com/awkokjun-nm2207/awkokjun-nm2207.github.io/blob/ed984e712a0aa301daef02594b93f048199b5eb6/NM2207_FINAL%20PROJECT_v2.pdf" target="_blank" rel="noopener noreferrer">here</a> to download the document.
-    </p>
-</body>
+  <!--data visualisation 4: used chatgpt to ask how to create a horizontal bar chart using chart.js-->
+  <canvas id="myHorizontalBarChart"></canvas>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const horizontalBarCtx = document.getElementById('myHorizontalBarChart').getContext('2d');
+  
+    const horizontalBarChart = new Chart(horizontalBarCtx, {
+      type: 'horizontalBar',
+      data: {
+        labels: [
+          'Improved shopping experience',
+          'Customer engagement/feedback',
+          'Generating revenue',
+          'Follow the latest digital trends',
+          'Customer acquisition',
+          'Collaboration/partnership with influencers',
+          'Cobranding with key suppliers/brands',
+        ],
+        datasets: [
+          {
+            label: 'Percentage',
+            data: [52, 52, 48, 47, 41, 41, 36],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.8)',
+              'rgba(54, 162, 235, 0.8)',
+              'rgba(255, 206, 86, 0.8)',
+              'rgba(75, 192, 192, 0.8)',
+              'rgba(153, 102, 255, 0.8)',
+              'rgba(255, 159, 64, 0.8)',
+              'rgba(255, 99, 255, 0.8)',
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+              'rgba(75, 192, 192, 1)',
+              'rgba(153, 102, 255, 1)',
+              'rgba(255, 159, 64, 1)',
+              'rgba(255, 99, 255, 1)',
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        plugins: {
+          datalabels: {
+            color: '#fff',
+            anchor: 'end',
+            align: 'start',
+            offset: 8,
+            font: {
+              size: 14,
+            },
+            formatter: function (value) {
+              return value + '%';
+            },
+          },
+        },
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+                fontColor: 'white',
+              },
+              gridLines: {
+                color: 'rgba(255, 255, 255, 0.1)',
+              },
+            },
+          ],
+          yAxes: [
+            {
+              position: 'left',
+              type: 'category',
+              ticks: {
+                fontColor: 'white',
+              },
+              gridLines: {
+                color: 'rgba(255, 255, 255, 0.1)',
+              },
+            },
+          ],
+        },
+      },
+    });
+  });
+  </script>
+
+  </script>
+  <a href="https://www-statista-com.libproxy1.nus.edu.sg/statistics/1346506/companies-livestreaming-use-objectives-worldwide/">Source: Statista</a>
+    </script>
+  
+  
+
+<!-- About Us and Contact Us Section -->
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>About Us</h2>
+      <p>
+        We are a dedicated team of data analysts and developers focused on providing insights into the e-commerce industry, specifically the live streaming sales on platforms like Tiktok. Our mission is to help businesses make informed decisions using our data visualizations and in-depth analysis.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or suggestions, please feel free to reach out to us at:
+      </p>
+      <p>
+        Email: info@tiktoklivestreamsales.com
+        <br>
+        Phone: +65 6343 4470
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 Tiktok Livestream E-commerce Sales. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <a href="#" class="text-white mr-2">Tiktok</a>
+        <a href="#" class="text-white mr-2">LinkedIn</a>
+        <a href="#" class="text-white">Tiktok Shop</a>
+      </div>
+    </div>
+  </div>
+</footer>
